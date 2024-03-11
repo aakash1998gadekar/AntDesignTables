@@ -10,6 +10,10 @@ import SearchFunc from './Components/SearchFunc';
 import EditableTable from './Components/EditableTable';
 
 import ExpandFunc from './Components/ExpandFunc';
+import HorizontalScrolling from './Components/HorizontalScrolling';
+import Summary from './Components/Summary';
+import Required from './Components/DynamicExampl/Required';
+import AppExample from './Components/InterdependentTable/App';
 
 function App() {
   // const [columns, setColumns] = useState([])
@@ -37,6 +41,8 @@ function App() {
 
   return (
     <div>
+      <h1>Summasy of Ant Design</h1>
+      <Summary/>
      <h1>Dynamic allocation of data</h1>
       <DynamicAlloc/> 
       <h1>Selecting Rows FOR TABLE</h1>
@@ -52,6 +58,11 @@ function App() {
     <EditableTable/>
     <h1>EXPAND FEATURES FOR TABLE</h1>
     <ExpandFunc/>
+    <h1>Horizontal Scrolling</h1>
+    <HorizontalScrolling/>
+    <h1>Basic Example</h1>
+    <Required/>
+    <AppExample/>
     </div>
   )
 }
